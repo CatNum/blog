@@ -1,12 +1,11 @@
 ---
-title: [装机 | 配置升级] 内存篇
+title: "[装机 | 配置升级] 内存篇"
 date: 2025-09-07T19:34:11+08:00
 tags:
-- 装机
+  - 装机
 categories:
-- 电脑装机
+  - 电脑装机
 # See details front matter: https://fixit.lruihao.cn/documentation/content-management/introduction/#front-matter
-
 ---
 
 # \[装机 | 配置升级] 内存篇
