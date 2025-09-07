@@ -1,24 +1,48 @@
 # -------------------------------------------------------------------------------------
 # Hugo Configuration
-# See: https://gohugo.io/getting-started/configuration/
+# 参考文档: https://gohugo.io/getting-started/configuration/
 # -------------------------------------------------------------------------------------
 
-title = "Hugo FixIt Blog"
-baseURL = "https://https://catnum.github.io/blog/"
-# theme = "FixIt"
-defaultContentLanguage = "en"
-languageCode = "cn"
+# 网站标题，显示在浏览器标签页和网站头部
+title = "CatNum Blog"
+
+# 网站基础URL，用于生成绝对链接
+baseURL = "https://catnum.github.io/blog/"
+
+# 使用的主题名称（当前被注释掉，表示未启用主题）
+theme = "FixIt"
+
+# 默认内容语言（"cn"表示中文）
+defaultContentLanguage = "cn"
+
+# HTML lang属性的语言代码（"en"表示英语）
+languageCode = "en"
+
+# 启用中日韩(CJK)语言支持，优化中文/日文/韩文字符处理
 hasCJKLanguage = true
+
+# 启用robots.txt文件生成，控制搜索引擎爬虫行为
 enableRobotsTXT = true
+
+# 启用Emoji表情支持，可在内容中使用:smile:等表情代码
 enableEmoji = true
+
+# 启用Git信息集成，在页面中显示最后修改的Git信息
 enableGitInfo = true
+
+# 禁用相对URL，生成绝对URL链接（推荐用于生产环境）
 relativeURLs = false
+
+# 构建时排除草稿内容（draft: true的文章不会被构建）
 buildDrafts = false
+
+# 自动摘要的长度（以单词计）
 summaryLength = 150
-# ignore some build errors
+
+# 忽略指定的构建错误日志类型
 ignoreLogs = [
-  "error-get-remote-image",
-  "error-get-remote-json",
-  "error-remote-getjson",
-  "error-missing-instagram-accesstoken"
+  "error-get-remote-image",    # 远程图片获取错误
+  "error-get-remote-json",     # 远程JSON获取错误
+  "error-remote-getjson",      # 远程getJSON错误
+  "error-missing-instagram-accesstoken" # Instagram访问令牌缺失错误
 ]
