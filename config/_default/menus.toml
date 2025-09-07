@@ -10,10 +10,10 @@
   pre = ""
   # you can add extra information after the name (HTML format is supported), such as icons
   post = ""
-  name = "Archives"
+  name = "归档"
   url = "/archives/"
   # title will be shown when you hover on this menu link
-  title = ""
+  title = "文章归档"
   weight = 1
   # FixIt 0.2.14 | NEW add user-defined content to menu items
   [main.params]
@@ -30,9 +30,9 @@
   parent = ""
   pre = ""
   post = ""
-  name = "Categories"
+  name = "分类"
   url = "/categories/"
-  title = ""
+  title = "文章分类"
   weight = 2
   [main.params]
     icon = "fa-solid fa-folder-tree"
@@ -41,9 +41,21 @@
   parent = ""
   pre = ""
   post = ""
-  name = "Tags"
+  name = "标签"
   url = "/tags/"
-  title = ""
+  title = "文章标签"
   weight = 3
   [main.params]
     icon = "fa-solid fa-tags"
+    
+[[main]]
+  identifier = "about"
+  parent = ""
+  pre = ""
+  post = ""
+  name = "关于"
+  url = "/about/"
+  title = "关于我"
+  weight = 4
+  [main.params]
+    icon = "fa-solid fa-user"
