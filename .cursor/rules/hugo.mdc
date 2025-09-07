@@ -1,0 +1,36 @@
+---
+description: Hugo与FixIt主题开发规范
+globs: "**/*"
+alwaysApply: true
+---
+
+# Hugo与FixIt主题开发规范
+
+## 内容创作规范
+1. 所有文章必须包含完整的Front Matter，包括title、date、tags、categories等基本字段
+2. 使用`<!--more-->`标签来分隔文章摘要和正文内容
+3. 文章标题层级应当遵循层次结构，从h2(##)开始，避免使用h1(#)，因为h1已被文章标题占用
+4. 图片资源应放置在对应文章目录下的pictures文件夹中，并使用相对路径引用
+5. 代码块必须指定语言类型，例如：```go、```javascript
+
+## 主题定制规范
+1. 主题定制应优先使用_custom.scss和_override.scss文件，避免直接修改主题源码
+2. 自定义JavaScript应放置在assets/js/custom.js文件中
+3. 主题配置修改应在config/_default/目录下的相应配置文件中进行
+
+## 文件组织规范
+1. 文章内容应按类别组织在content/posts/目录下的子文件夹中
+2. 静态资源(如图片、PDF等)应放在static目录下，并按类型或用途分类存放
+3. 自定义短代码应放置在layouts/shortcodes/目录下
+
+## 开发流程
+1. 本地开发时使用`hugo server -D`命令实时预览更改
+2. 提交前使用`hugo`命令构建站点，确保无错误
+3. 定期备份content目录下的内容
+
+## 最佳实践
+1. 使用相对URL链接站内内容，便于站点迁移
+2. 合理使用FixIt主题提供的短代码增强内容展示效果
+3. 图片应进行适当压缩，优化加载速度
+4. 定期更新Hugo和FixIt主题版本，获取新功能和安全修复
+5. 使用Git进行版本控制，保持提交信息清晰明了
