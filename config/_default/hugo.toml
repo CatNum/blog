@@ -10,7 +10,7 @@ title = "CatNum Blog"
 baseURL = "https://catnum.github.io/blog/"
 
 # 使用的主题名称（当前被注释掉，表示未启用主题）
-theme = "FixIt"
+# theme = "FixIt"
 
 # 默认内容语言（"cn"表示中文）
 defaultContentLanguage = "cn"
